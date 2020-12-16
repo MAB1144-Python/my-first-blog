@@ -14,13 +14,13 @@
             <h1><a href="/">MAB</a></h1>
             <a href="www.linkedin.com/in/brayanandrumontenegroembus">linkedin Brayan Andru Montenegro Embus</a>
         </div>
-        {% for post in posts %}
-         <div>
-          <p>published: {{ post.published_date }}</p>
-          <h1><a href="">{{ post.title }}</a></h1>
-          <p>{{ post.text|linebreaksbr }}</p>
-         </div>
-        {% endfor %}
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
         <div class="post">
             <p>nuestra pagina esta en construcción pero ya puedes contactarnos.</p>
             <p>cel: 3175750088</p>
